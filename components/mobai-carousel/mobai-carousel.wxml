@@ -1,0 +1,9 @@
+<!--components/mobai-carousel.wxml-->
+<swiper class="carousel" autoplay="true" interval="3000" duration="1000" previous-margin="200rpx" next-margin="200rpx" bindchange="swiperChange" circular="true">
+  <block wx:for="{{swiperList}}" wx:key="index">
+    <swiper-item>
+      <image class='img {{currentIndex == index?"selectImg":""}}' lazy-load="true" src="{{item.vod_pic}}"></image>
+      <view class='{{currentIndex == index?"selectView":""}}'>{{item.vod_name}}</view>
+    </swiper-item>
+  </block>
+</swiper>

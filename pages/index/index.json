@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "mobai-carousel": "/components/mobai-carousel/mobai-carousel"
+  }
+}
